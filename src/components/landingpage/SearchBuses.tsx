@@ -1,9 +1,11 @@
 import { SearchBusesConfig } from '@/configs/landingpage/SearchBusesConfig'
 import { Box, Button, Card, Divider, Grid, TextField } from '@mui/material'
+import { useRouter } from 'next/router'
 
 const searchBusesConfig = new SearchBusesConfig()
 
 export const SearchBuses = () => {
+    const router = useRouter()
     return (
         <>
             <Box className='landing-page' sx={{
@@ -70,7 +72,7 @@ export const SearchBuses = () => {
                                 alignItems: 'center',
                                 background: '#D84E55'
                             }}>
-                            <Button sx={{ background: '#D84E55', color: 'white', fontWeight: 'bold', fontSize: '19px', padding: '40px' }}>Search Buses</Button>
+                            <Button onClick={() => router?.push('/search')} sx={{ background: '#D84E55', color: 'white', fontWeight: 'bold', fontSize: '19px', padding: '40px' }}>Search Buses</Button>
                         </Grid>
                     </Grid>
                 </Card>
