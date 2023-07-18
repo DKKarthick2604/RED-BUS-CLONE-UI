@@ -1,6 +1,7 @@
 import { BusListConfig } from '@/configs/searchpage/BusListConfig'
 import { Box, Grid, Typography, Card, Chip, Button } from '@mui/material'
 import Image from 'next/image'
+import { SeatSelector } from './SeatSelector'
 
 const busListConfig = new BusListConfig()
 
@@ -169,6 +170,7 @@ export const BusList = () => {
                             </Grid>
                             <Button sx={{ background: '#d84e55', color: 'white', fontSize: '10px', float: 'right' }} size="small">VIEW SEATS</Button>
                         </Card>
+                        <SeatSelector />
                         <br />
                     </>
                 )}
