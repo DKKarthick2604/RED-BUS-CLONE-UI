@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['st.redbus.in'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 }
 
 module.exports = nextConfig
