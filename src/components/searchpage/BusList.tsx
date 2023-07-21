@@ -1,21 +1,45 @@
 import { BusListConfig } from '@/configs/searchpage/BusListConfig'
-import { Box, Grid, Typography, Card, Chip, Button } from '@mui/material'
+import { Box, Grid, Typography, Card, Chip, Button, Modal } from '@mui/material'
 import Image from 'next/image'
 import { SeatSelector } from './SeatSelector'
 import react, { useState } from 'react'
+import { Login } from '../login/Login'
 
 const busListConfig = new BusListConfig()
 
 export const BusList = () => {
 
+    const style = {
+        position: 'absolute' as 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 1000,
+        bgcolor: 'white',
+        // border: '2px solid #000',
+        // boxShadow: 24,
+        p: 4,
+    };
+
     const [selectedBusToViewSeats, setSelectedBusToViewSeats] = useState<any>(null)
+    const [isLoginPageVisible, setIsLoginPageVisible] = useState(false)
+    const [phoneNumber, setPhoneNumber] = useState('')
+    const [temp, setTemp] = useState<any>(null)
 
     const handleViewSeatButton = (index: any) => {
         if (index + 1 === selectedBusToViewSeats) {
             setSelectedBusToViewSeats(null)
         } else {
-            setSelectedBusToViewSeats(index + 1)
+            setIsLoginPageVisible(true)
+            setTemp(index + 1)
         }
+    }
+
+    const hanldeLogin = (data: any) => {
+        setPhoneNumber(data)
+        setIsLoginPageVisible(false)
+        console.log("TEMP ---", data)
+        setSelectedBusToViewSeats(temp)
     }
 
     return (
@@ -183,9 +207,20 @@ export const BusList = () => {
                             <Button onClick={() => { handleViewSeatButton(index) }} sx={{ background: '#d84e55', color: 'white', fontSize: '10px', float: 'right' }} size="small">VIEW SEATS</Button>
                         </Card>
                         {selectedBusToViewSeats === data?.busID &&
-                            <SeatSelector phoneNumber={8667228531} busID={data?.busID} />
+                            <SeatSelector phoneNumber={phoneNumber} busID={data?.busID} />
                         }
                         <br />
+
+                        <Modal
+                            open={isLoginPageVisible}
+                            onClose={() => setIsLoginPageVisible(false)}
+                            aria-labelledby="modal-modal-title"
+                            aria-describedby="modal-modal-description"
+                        >
+                            <Box sx={style}>
+                                <Login hanldeLogin={(data: any) => hanldeLogin(data)} />
+                            </Box>
+                        </Modal>
                     </>
                 )}
             </Box>

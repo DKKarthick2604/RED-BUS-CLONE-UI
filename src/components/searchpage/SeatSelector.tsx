@@ -9,7 +9,7 @@ const helper = new Helper()
 
 interface SeatSelectorInterface {
     busID: number
-    phoneNumber: number
+    phoneNumber: any
 }
 
 export const SeatSelector = (props: SeatSelectorInterface) => {
@@ -22,6 +22,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
     const [userSelectedUpperSeats, setUserSelectedUpperSeats] = useState<any>([])
 
     const handleSeatSelection = (data: any, deck: string) => {
+        console.log("===", props)
         if (deck === 'lower') {
             if (userSelectedLowerSeats?.filter((item: any) => item?.seatNo === data?.seatNo)?.length !== 0) {
                 data['isSeatBooked'] = !data?.isSeatBooked
@@ -61,7 +62,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
         let upperDeckSeats: any = helper?.getCookie(`${props?.busID}-upper`)
         setLowerDeck(replaceObjectsInArray(seatSelectorConfig?.SEAT_SELECTOR_LOWER_DESK_CONFIG, JSON.parse(lowerDeckSeats)))
         setUpperDeck(replaceObjectsInArray(seatSelectorConfig?.SEAT_SELECTOR_UPPER_DESK_CONFIG, JSON.parse(upperDeckSeats)))
-    }, [])
+    }, [props])
 
     return (
         <>
