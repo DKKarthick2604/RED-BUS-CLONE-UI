@@ -2,10 +2,22 @@ import { BusListConfig } from '@/configs/searchpage/BusListConfig'
 import { Box, Grid, Typography, Card, Chip, Button } from '@mui/material'
 import Image from 'next/image'
 import { SeatSelector } from './SeatSelector'
+import react, { useState } from 'react'
 
 const busListConfig = new BusListConfig()
 
 export const BusList = () => {
+
+    const [selectedBusToViewSeats, setSelectedBusToViewSeats] = useState<any>(null)
+
+    const handleViewSeatButton = (index: any) => {
+        if (index + 1 === selectedBusToViewSeats) {
+            setSelectedBusToViewSeats(null)
+        } else {
+            setSelectedBusToViewSeats(index + 1)
+        }
+    }
+
     return (
         <>
             <Box sx={{ padding: '10px' }}>
@@ -37,7 +49,7 @@ export const BusList = () => {
                 </Grid>
                 <br />
 
-                {busListConfig?.BUS_LIST_CONFIG?.map((data: any) =>
+                {busListConfig?.BUS_LIST_CONFIG?.map((data: any, index: any) =>
                     <>
                         <Card sx={{ boxShadow: '1px 0px 5px 0px rgba(0,0,0,0.25)', padding: '10px' }}>
                             <Image src={'https://www.redbus.in/images/reviews/primo_logo.svg'} alt='buslogo' width={60} height={30} />
@@ -168,9 +180,11 @@ export const BusList = () => {
                                     <Typography variant='caption' sx={{ fontSize: '10px', color: 'red' }}>Return Trip redDeal : Unlock min. 10% OFF on return ticket</Typography>
                                 </Grid>
                             </Grid>
-                            <Button sx={{ background: '#d84e55', color: 'white', fontSize: '10px', float: 'right' }} size="small">VIEW SEATS</Button>
+                            <Button onClick={() => { handleViewSeatButton(index) }} sx={{ background: '#d84e55', color: 'white', fontSize: '10px', float: 'right' }} size="small">VIEW SEATS</Button>
                         </Card>
-                        <SeatSelector />
+                        {selectedBusToViewSeats === data?.busID &&
+                            <SeatSelector phoneNumber={8667228531} busID={data?.busID} />
+                        }
                         <br />
                     </>
                 )}

@@ -1,6 +1,7 @@
 export class BusListConfig {
     BUS_LIST_CONFIG = [
         {
+            busID: 1,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -24,6 +25,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 2,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -47,6 +49,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 3,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -70,6 +73,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 4,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -93,6 +97,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 5,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -116,6 +121,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 6,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -139,6 +145,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 7,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -162,6 +169,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 8,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -185,6 +193,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 9,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -208,6 +217,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 10,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -231,6 +241,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 11,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
@@ -254,6 +265,7 @@ export class BusListConfig {
             thirdSeatsAvailable: '',
         },
         {
+            busID: 12,
             firstName: 'VKV Travels',
             secondName: 'Bharat Benz A/C Sleeper (2+1)',
             thirdName: '',
