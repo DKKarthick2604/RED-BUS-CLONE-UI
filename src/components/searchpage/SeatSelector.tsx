@@ -116,8 +116,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
                                                             background: (data?.phoneNumber === props?.phoneNumber && data?.isSeatBooked) ? '#F1A9A0' : (data?.isSeatBooked ? '#CBCBCB' : 'white')
                                                         }}
                                                         onClick={() => { handleSeatSelection(data, "lower") }}
-                                                    >
-                                                    </Chip>
+                                                    />
                                                 </Grid>
                                             )
                                         }
@@ -138,8 +137,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
                                 height: '25px',
                                 background: '#F1A9A0'
                             }}
-                        >
-                        </Chip> Selected
+                        /> Selected
                         <br /><br />
                         <Chip
                             label=""
@@ -151,8 +149,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
                                 height: '25px',
                                 background: 'white'
                             }}
-                        >
-                        </Chip> Available
+                        /> Available
                         <br /><br />
                         <Chip
                             label=""
@@ -164,8 +161,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
                                 height: '25px',
                                 background: '#CBCBCB'
                             }}
-                        >
-                        </Chip> Booked
+                        /> Booked
                     </Grid>
                 </Grid>
 
@@ -198,8 +194,7 @@ export const SeatSelector = (props: SeatSelectorInterface) => {
                                                             background: (data?.phoneNumber === props?.phoneNumber && data?.isSeatBooked) ? '#F1A9A0' : (data?.isSeatBooked ? '#CBCBCB' : 'white')
                                                         }}
                                                         onClick={() => { handleSeatSelection(data, "upper") }}
-                                                    >
-                                                    </Chip>
+                                                    />
                                                 </Grid>
                                             )
                                         }
