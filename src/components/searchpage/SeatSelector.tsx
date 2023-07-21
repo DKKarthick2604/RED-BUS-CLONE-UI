@@ -1,5 +1,5 @@
 import { SeatSelectorConfig } from '@/configs/searchpage/SeatSelectorConfig'
-import { Helper } from '@/utils/helper'
+import { Helper } from '../../utils/Helper'
 import { Box, Grid, Typography, Card, Chip, Divider, Button, Drawer } from '@mui/material'
 import { useEffect, useState } from 'react'
 import { Payment } from './Payment'
