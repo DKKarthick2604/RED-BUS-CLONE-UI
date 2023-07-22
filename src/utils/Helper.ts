@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This file includes all the helper functions
+**/
+
 export class Helper {
     setCookie(name: any, value: any, daysToExpire: any = 1) {
         const expires = daysToExpire
@@ -13,6 +21,6 @@ export class Helper {
                 return decodeURIComponent(cookieValue);
             }
         }
-        return null; // Cookie not found
+        return null; 
     }
 }

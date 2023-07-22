@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will handle the bus searches
+**/
+
 import { SearchBusesConfig } from '@/configs/landingpage/SearchBusesConfig'
 import { Box, Button, Card, Divider, Grid, TextField } from '@mui/material'
 import { useRouter } from 'next/router'

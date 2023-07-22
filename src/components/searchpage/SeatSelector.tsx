@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will handle the seat selection
+**/
+
 import { SeatSelectorConfig } from '@/configs/searchpage/SeatSelectorConfig'
 import { Helper } from '../../utils/Helper'
 import { Box, Grid, Typography, Card, Chip, Divider, Button, Drawer } from '@mui/material'

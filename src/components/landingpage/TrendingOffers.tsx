@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will show all the trending offers
+**/
+
 import React from 'react';
 import { TrendingOffersConfig } from "@/configs/landingpage/TrendingOffersConfig";
 import { Box, Card, Typography, Grid, Chip } from "@mui/material";

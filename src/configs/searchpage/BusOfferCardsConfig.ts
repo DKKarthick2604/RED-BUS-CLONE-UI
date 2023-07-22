@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This config will contain bus offer cards config
+**/
+
 export class BusOfferCardsConfig {
     BUS_OFFER_CARDS_CONFIG = [
         {

@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will handle the bus payments
+**/
+
 import { Box, Grid, Typography, Card, Alert, Snackbar, Button, TextField, Radio } from '@mui/material'
 import { useState } from 'react'
 

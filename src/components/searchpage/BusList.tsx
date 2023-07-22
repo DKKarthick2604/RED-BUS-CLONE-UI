@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will show list of buses
+**/
+
 import { BusListConfig } from '@/configs/searchpage/BusListConfig'
 import { Box, Grid, Typography, Card, Chip, Button, Modal } from '@mui/material'
 import Image from 'next/image'
@@ -16,8 +24,6 @@ export const BusList = () => {
         transform: 'translate(-50%, -50%)',
         width: 1000,
         bgcolor: 'white',
-        // border: '2px solid #000',
-        // boxShadow: 24,
         p: 4,
     };
 

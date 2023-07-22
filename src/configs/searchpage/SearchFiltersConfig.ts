@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This config will contain search filters config
+**/
+
 export class SearchFiltersConfig {
     SEARCH_FILTERS_CONFIG = [
         {

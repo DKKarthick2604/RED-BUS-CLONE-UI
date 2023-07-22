@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will show high level info about the bus
+**/
+
 import { Box, Typography, Button } from '@mui/material'
 
 export const SearchHighLevelInfo = () => {

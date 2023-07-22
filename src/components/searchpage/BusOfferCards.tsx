@@ -1,3 +1,11 @@
+/**
+* CREATED BY    : Karthick D K 
+* CREATED DATE  : 20 JUNE 2023
+* MODIFIED BY   : Karthick D K
+* MODIFIED DATE : 20 JUNE 2023
+* DESCRIPTION   : This component will show all the bus offer cards
+**/
+
 import { BusOfferCardsConfig } from "@/configs/searchpage/BusOfferCardsConfig"
 import { Card, Grid, Typography } from '@mui/material'
 
